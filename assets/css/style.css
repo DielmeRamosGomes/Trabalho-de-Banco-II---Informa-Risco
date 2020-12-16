@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+
+*{
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+}
+
+@font-face{
+	font-family: 'Nunito Sans', sans-serif;
+	src:url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+}
+
+/* COMEÇO MENU */
+nav{
+    background: #A9A9A9;
+    padding:0px 20px;
+    transition: 0.6s ease-in-out;
+}
+
+.cover{
+	position: absolute;
+}
+
+ nav li a:hover{
+  	background: rgba(0, 0, 0, 0);
+} 
+
+#logo{
+	position: relative;
+	height: 100%;
+	width: auto;
+	transition: all ease .4s;
+}
+
+#logo:hover{
+	transform: scale(1.2);
+}
+
+.brand-logo{
+	left: 10%;
+	transition: all ease .4s;
+}
+
+.conj-texto-imagem img{
+	transition: 0.4s ease-in-out;
+	transform: scale(1);
+}
+
+.conj-texto-imagem:hover img{
+	transition: 0.4s ease-in-out;
+	transform: scale(1.2);
+}
+
+.conj-texto-imagem .txt{
+	transition: all ease .4s;
+	-webkit-animation: voltar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: voltar 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+
+}
+
+.conj-texto-imagem:hover .txt{
+	-webkit-animation: text-pop-up-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: text-pop-up-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.item-menu{
+	transition: all ease .3s;
+}
+
+.item-menu:hover{
+	transform: scale(1.1);
+}
+
+.menu-solido{
+	background-color: #A9A9A9;
+}
+/* FIM MENU */
+
+.campo{
+	width: 300px;
+	height: 20px;
+	border: 1px solid #ddd;
+	margin-top: 5px;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+
+
+#map {
+    height: 50%;
+  }
+
+/* COMEÇO DO RODAPÉ */
+.page-footer{
+	background-color: #A9A9A9 !important;
+}
+
+
+/* FIM DO RODAPÉ */
+
