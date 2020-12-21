@@ -112,7 +112,7 @@
   
     <div class="footer-copyright">
       <div class="container">
-        <center>Desenvolvido por Dielme</center>
+        <center>Desenvolvido por Dielme e Paulo</center>
       </div>
     </div>
   </footer>

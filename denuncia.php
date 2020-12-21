@@ -29,7 +29,7 @@
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 100%;
+        height: 80%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -84,16 +84,16 @@
 <h5  class="center">1) Endereço do Crime</h5>
 
     <div id="map"></div>
-    <script>
+    <script type="text/javascript">
       var map;
       function initMap() {
         map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
+          center: {lat: -22.118568, lng: -51.409165},
           zoom: 8
         });
       }
     </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCvgKk4wPbUzk9Q6up42KW_4hY3ANy-_iE&callback=initMap"
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfLQ9tQtFBR_zUM5tyBNh6JX3z-PuCVUg&callback=initMap"
     async defer></script>
 
 
