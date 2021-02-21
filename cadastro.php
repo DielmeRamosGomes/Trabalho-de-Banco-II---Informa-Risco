@@ -48,7 +48,7 @@
     <nav>
       <div class="nav-wrapper" id="menu">
         <div class="conj-texto-imagem">
-          <a href="" class="brand-logo">
+          <a href="index.html" class="brand-logo">
             <b class="txt">InformaRisco</b>
           </a>
         </div>
@@ -56,9 +56,9 @@
                 <i class="material-icons">menu</i>
             </a>
         <ul class="right hide-on-med-and-down">
-          <li><a class="item-menu" href="#red-sobrenos"><b>COMO FUNCIONA</b></a></li>
-          <li><a class="item-menu" href="#red-sobrenos"><b>DENÚNCIA</b></a></li>
-          <li><a class="item-menu" href="#red-contato"><b>CONTATO</b></a></li>
+          <!-- <li><a class="item-menu" href="#red-sobrenos"><b>COMO FUNCIONA</b></a></li>
+          <li><a class="item-menu" href="#red-sobrenos"><b>DENÚNCIA</b></a></li> 
+          <li><a class="item-menu" href="#red-contato"><b>CONTATO</b></a></li> -->
         </ul>
       </div>
     </nav>  
@@ -79,10 +79,9 @@
 <br><br>
  <form method="POST" action="login_vai.php">
 
+    Email: <input type="email" name="email" class="campo" maxlenght="50"><br>
 
-  Email: <input type="email" name="email" class="campo" maxlenght="50"><br>
-
-  Senha: <input type="password" name="senha" class="campo" maxlenght="40" <br>
+    Senha: <input type="password" name="senha" class="campo" maxlenght="40"><br>
 
   <input type="submit" value="ENTRAR" class="btn">
   </form>
@@ -103,7 +102,7 @@
     <input type="submit" value="SALVAR" class="btn">
       </form>
       
-    </div>
+  </div>
 
 
     <!-- COMEÇO DO RODAPÉ -->

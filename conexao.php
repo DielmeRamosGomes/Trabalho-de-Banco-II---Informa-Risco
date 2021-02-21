@@ -1,5 +1,7 @@
-<?php 
-	session_start(); 
+<?php
+	if (session_status() !== PHP_SESSION_ACTIVE){  //Verificar se a sessão já está aberta.
+		session_start();
+	} 
 	$hostname = "localhost";
 	$user = "root";
 	$password = "";

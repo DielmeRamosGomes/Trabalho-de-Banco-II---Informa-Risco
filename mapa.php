@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Denúncia</title>
+    <title>Mapa</title>
     <meta name="viewport" content="initial-scale=1.0">
+    <meta charset="utf-8">
+
     <meta charset="utf-8">
 
   <!-- INCLUINDO JQUERY -->
@@ -23,11 +25,12 @@
   <!-- INCUINDO JavaScript -->
   <script type="text/javascript" src="assets/js/function.js"></script>
 
+
     <style>
       /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
       #map {
-        height: 80%;
+        height: 100%;
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
@@ -121,6 +124,7 @@
   </head>
   <body>
 
+
     <!-- COMEÇO DO MENU -->
 
   <div class="navbar-fixed cover">
@@ -135,33 +139,20 @@
                 <i class="material-icons">menu</i>
             </a>
         <ul class="right hide-on-med-and-down">
-          <!-- <li><a class="item-menu" href="#red-sobrenos"><b>COMO FUNCIONA</b></a></li>
-          <li><a class="item-menu" href="#red-sobrenos"><b>DENÚNCIA</b></a></li>
-          <li><a class="item-menu" href="#red-contato"><b>CONTATO</b></a></li> -->
+          <li><a class="item-menu" href="#red-sobrenos"><b>COMO FUNCIONA</b></a></li>
+          <li><a class="item-menu" href="cadastro.php"><b>ENTRE</b></a></li>
+         <!-- <li><a class="item-menu" href="#red-contato"><b>CONTATO</b></a></li> -->
         </ul>
       </div>
     </nav>  
   </div>
   <!-- FIM DO MENU -->
-
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-
-<h5  class="center">1) Endereço do Crime</h5>
-
       <div>
-        <!-- <script src="./index1.js"></script> -->
         <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
         <input id="pac-input" class="controls" type="text" placeholder="Caixa de Pesquisa"/>
-      </div>
-
+    </div>
 
     <div id="map"></div>
-    <!-- <script type="text/javascript"> -->
     <script>
         var customLabel = {
         crime: {
@@ -334,140 +325,6 @@ function doNothing() {}
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfLQ9tQtFBR_zUM5tyBNh6JX3z-PuCVUg&callback=initMap&libraries=places&v=weekly">
     ></script>
 
-  <div>
-    
-  <div>
-
-    <!-- <div> -->
-      
-      <h5  class="center">2) Dados do Endereço</h5>
-        <br><br>
-        <form method="post" action="processa_denuncia.php?resp=cadastrado">
-
-          Nome: <input type="text" name="name" class="campo" maxlenght="50" required><br>
-
-          Endereço: <input type="text" name="address" class="campo" maxlenght="50" required><br>
-
-          Latitude: <input id="lat1" type="number" step=0.000001 name="lat" class="campo" maxlenght="50" required><br>
-
-          Longitude: <input id="lng1" type="number" step=0.000001 name="lng" class="campo" maxlenght="50" required><br>
-
-          Tipo: <input type="text" name="type" class="campo" maxlenght="50" required><br>
-
-          <!-- </form> -->
-          <!-- <div> -->
-
-          <!-- <div> -->
-      
-          <h5  class="center">3) Dados</h5>
-          <br><br>
-          <!-- <form method="post" action="processa_denuncia.php?resp=cadastrado"> -->
-
-          Hora da Ocorrência: <input type="time" name="hora" class="campo" maxlenght="50" required><br>
-
-          Data da Ocorrência: <input type="date" name="data" class="campo" maxlenght="50" required><br>
-
-          <!-- </form> -->
-          <!-- <div> -->
-
-          <!-- <div> -->
-      
-          <h5  class="center">4) Informações Adicionais </h5>
-
-          <!-- <form method="post" action="processa_denuncia.php?resp=cadastrado"> -->
-
-          Genero da Vítima:   <br> <br>       
-        
-          <label class="container">
-          <input type="radio" name="genero" value="1">
-          <span class="checkmark"></span>
-          </label>Feminino<br>   
-        
-          <label class="container">
-          <input type="radio" name="genero" value="0" >
-          <span class="checkmark"></span>
-          </label>Masculino<br>   
-        
-          <label class="container">
-          <input type="radio" name="genero" value="NULL" >
-          <span class="checkmark"></span>
-          </label>Outro
-
-          <BR>
-          <BR>
-          <BR>
-
-          Fez Boletim de Ocorrência? <br><br>
-
-          <label class="container">
-          <input type="radio" name="fezBO" value="1">
-          <span class="checkmark"></span>
-          </label>Sim<br>   
-        
-          <label class="container">
-          <input type="radio" name="fezBO" value="0">
-          <span class="checkmark"></span>
-          </label>Não<br>   
-
-          <BR>
-          <BR>
-          Se foi roubo, objeto roubado: <br><Br>
-
-          <label class="container">
-          <input type="radio" name="objRoubado" value="1">
-          <span class="checkmark"></span>
-          </label>Bolsa<br>
-        
-          <label class="container">
-          <input type="radio" name="objRoubado" value="2">
-          <span class="checkmark"></span>
-          </label>Carteira<br>
-        
-          <label class="container">
-          <input type="radio" name="objRoubado" value="3">
-          <span class="checkmark"></span>
-          </label>Documentos<br>
-        
-          <label class="container">
-          <input type="radio" name="objRoubado" value="4">
-          <span class="checkmark"></span>
-          </label>Celular<br>
-        
-          <label class="container">
-          <input type="radio" name="objRoubado" value="5">
-          <span class="checkmark"></span>
-          </label>Relógio<br>
- 
-          <label class="container">
-          <input type="radio" name="objRoubado" value="6">
-          <span class="checkmark"></span>
-          </label>Carro<br>
-
-          <BR>
-          <BR>
-        
-          Tipo de Risco: <br><Br>
-
-          <label class="container">
-          <input type="radio" name="codRisco" value="1">
-          <span class="checkmark"></span>
-          </label>Crime<br>
-        
-          <!--<label class="container">
-          <input type="checkbox" name="codRisco" value="2">
-          <span class="checkmark"></span>
-          </label>Acidente<br>-->
-
-          <BR>
-
-          <input type="submit" value="Salvar" class="btn" href="denuncia.php">
-        
-        </form>
-
-    <!-- <div> -->
-
-  </div>
-
     <!-- COMEÇO DO RODAPÉ -->
   
   <footer class="page-footer" id="red-contato">
@@ -483,38 +340,3 @@ function doNothing() {}
 
   </body>
 </html>
-
-
-<?php
-  if (isset($_GET['respLogin'])){
-   if($_GET['respLogin'] == 'sucesso'){
-
-?>
-<script type="text/javascript">
-  alert("Login realizado com sucesso!");
-</script>
-
-<?php } }
- if (isset($_GET['resp'])){
-   if($_GET['resp'] == 'sucesso'){
-
-?>
-<script type="text/javascript">
-  alert("Denuncia realizada com sucesso!");
-</script>
-
-<?php } }
-
-
-/* 
-
-Nome: <input type="text" name="nome" class="campo" maxlenght="50" required><br>
-          
-          Email: <input type="email" name="email" class="campo" maxlenght="50" required><br>
-
-          Senha: <input type="password" name="senha" class="campo" maxlenght="40" required><br>
-
-          <input type="submit" value="Salvar" class="btn">
-*/
-
- ?>

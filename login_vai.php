@@ -12,7 +12,7 @@ $senha = $_POST['senha'];
 if (!isset($_POST['email']) || !isset($_POST['senha'])){
 	echo "Forneça um login e uma senha!";
 }else{
-	echo "login: $login | senha: $senha |";
+	echo "Erro: Senha Incorreta";
 }
 
 
@@ -30,12 +30,6 @@ if ($row_total > 0){
           echo"<script language='javascript' type='text/javascript'>alert('Não foi possível realizar o login');window.location.href='cadastro.php'</script>";
         }
 
-//var_dump($row_total['COD_USUARIO']);
-
-//if ($total) {
-//	echo "LOGIN FEITO COM SUCESSO!";}
-//else { echo "ERRO";}
 mysqli_close($conexao);
-
 
 ?>
